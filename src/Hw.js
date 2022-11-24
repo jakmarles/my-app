@@ -1,22 +1,15 @@
 import React, { useState } from 'react'
 
 const Hw = () => {
-    // const [readval, write method] = useState(init value)
     const [msg, setMsg] = useState("Show/Hide")
-    const showHide = () => {
-        // msg? setMsg(""):setMsg("Show/Hide")
-        if (msg){
-        setMsg("")
-        }else{
-            setMsg("Show/Hide")
-        }
-    }
-
+    const showHide = () => msg ? setMsg("") : setMsg(<h1>Show/Hide</h1>)
+    const [userName, setUserName] = useState(null)
     return (
         <div>
-
-            <div style={{color:'red'}}> {msg}</div>
+            {userName}
+            <div style={{ color: 'red' }}> {msg}</div>
             <button onClick={() => showHide()}>Test</button>
+            <input onChange={(e) => setUserName(e.target.value)}></input>
 
         </div>
     )
