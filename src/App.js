@@ -1,19 +1,23 @@
+import Hw from "./Hw";
 import Matan from "./Matan";
 
 
 const App = () => {
-  const students=['abc', 'def', 'ghi']
+  const students=['Mushy', 'Platinum', 'Michelle']
   const colors=['blue','green','purple']
-  const ages=[21,4,12]
+
   return (
   <div> 
     {/* without map */}
     My stud list:
-    <Matan color="blue" studentsName={students[0]}></Matan>
+    {/* <Matan color="blue" studentsName={students[0]}></Matan>
     <Matan color="green" studentsName={students[1]}></Matan>
-    <Matan color="purple" studentsName={students[2]}></Matan>
+    <Matan color="purple" studentsName={students[2]}></Matan> */}
+  
+
     {/* with map */}
-    {students.map((stu,i)=><Matan color={colors[i]} studentsName= {stu}></Matan>)}
+    {students.filter(stuName => stuName.length < 7 ).map((stu,i)=><Matan key={stu} color={colors[i]} studentsName= {stu}></Matan>)}
+    <Hw></Hw>
   </div>)
   
 };
