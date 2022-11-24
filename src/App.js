@@ -1,5 +1,6 @@
 import Hw from "./Hw";
 import Matan from "./Matan";
+import "./App.css"
 
 
 const App = () => {

@@ -12,8 +12,11 @@
             // event.stopPropagation()
             console.log(event.target.value);
         }
-
+        const textModify = ()=>result.innerHTML = event.target.value
     </script>
+    <div id="result"></div>
+    <input onkeyup="textModify()" type="text">
+    
     <div onclick="test()" style="padding: 100px;background-color:rgb(240, 248, 255)">
         <div onclick="test()" style="padding: 100px;background-color:rgb(48, 82, 113)">
             <div onclick="test()" style="padding: 100px;background-color:rgb(56, 224, 37)">bla bla</div>
