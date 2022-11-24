@@ -1,3 +1,7 @@
+# Note from me
+This is my testing of learning react in class there no certain point in it rn 24/11/2022
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

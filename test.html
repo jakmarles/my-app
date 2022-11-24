@@ -7,13 +7,15 @@
     <title>Document</title>
 </head>
 <body>
-    <div style="background-color:#00ffff"></div>
     <script>
-        let r =8 
-        
-        r > 6 && console.log("gggggggggg")
-
+        const test = () => {
+            // event.stopPropagation()
+            console.log(event.target.value);
+        }
 
     </script>
+    <div onclick="test()" style="padding: 100px;background-color:rgb(240, 248, 255)">
+        <div onclick="test()" style="padding: 100px;background-color:rgb(48, 82, 113)">
+            <div onclick="test()" style="padding: 100px;background-color:rgb(56, 224, 37)">bla bla</div>
 </body>
 </html>
