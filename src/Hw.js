@@ -8,11 +8,11 @@ const Hw = () => {
         <div>
             {userName}
             <div style={{ color: 'red' }}> {msg}</div>
-            <button onClick={() => showHide()}>Test</button>
+            <button onClick={() => showHide()}>Show hide btn</button>
             <input onChange={(e) => setUserName(e.target.value)}></input>
 
         </div>
     )
 }
 
-export default Hw
+export default Hw 

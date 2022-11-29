@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        myFunction = () => {
+            var bgColor = document.getElementById('background').value;
+            document.body.style.backgroundColor = bgColor;
+        }
+        </script>
+
+        <h3>Background colour: 
+        <select id= background>
+         <option value="Red"> Red </option>
+         <option value="Green" > Green</option>
+         <option value="Blue"> Blue </option>
+         <option value="White"> Clear </option>
+        </select> 
+        <button onclick="myFunction()">Change Background</button>
+
+        <br/><br/>
+
+       
+</body>
+</html>
