@@ -3,6 +3,7 @@ import Matan from "./Matan";
 import "./App.css"
 import Targil from "./Targil";
 import Targil2 from "./Targil2";
+import Targil3 from "./Targil3";
 
 
 const App = () => {
@@ -22,7 +23,7 @@ const App = () => {
     {students.filter(stuName => stuName.length < 7 ).map((stu,i)=><Matan key={stu} color={colors[i]} studentsName= {stu}></Matan>)}
     <Hw></Hw>
     <Targil/><br/><br/>
-   <Targil2/>
+   <Targil2/><Targil3/>
     {/* {names.map((stu,i)=>
         <Targil key={stu} color={names[i]} studentsName= {stu}></Targil>)} */}
 
